@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Effect</title>
+    <link rel="stylesheet" href="jqueryStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $('.item-header').click(function() {
+                $(this).css('background-color','red')
+            })
+
+
+            $('.item-sidebar').click(function() {
+                $(this).text('Leftbar')
+            })
+
+            $('.item-extra').click(function() {
+                $('.item-main').fadeOut('slow')
+            })
+
+            $('.item-footer').click(function() {
+                
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item-header">Header</div>
+        <div class="item-sidebar">Sidebar</div>
+        <div class="item-main">Main content</div>
+        <div class="item-extra">Extra content</div>
+        <div class="item-footer">Footer</div>
+    </div>
+</body>
+</html>
